@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/new_bg">
+
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To order search a product by name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#423F3F"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="product name"
+        android:hint="Product name"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:padding="15dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="product quantity"
+        android:hint="Product quantity"
+        android:background="@drawable/edit_text_background"
+        android:inputType="number"
+        android:padding="15dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_message_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(*It shows available quantity, change to get your required quantity)"
+        android:textSize="12sp"
+        android:gravity="start"
+        android:textColor="#423F3F"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="1dp"/>
+
+
+    <TextView
+        android:id="@+id/text_view_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product price"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:enabled="false"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view_product_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product ID"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:id="@+id/text_view_order_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" ______________________________________________"
+        android:padding="0dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:id="@+id/text_view_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:enabled="false"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/image_view_product"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/icon_upload2"
+        />
+
+    <TextView
+        android:id="@+id/text_view_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment method"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:textColor="#423F3F"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only Cash on Delivery service availabe (Charge:60)"
+        android:textSize="15sp"
+        android:gravity="start"
+        android:textColor="#423F3F"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2"
+        >
+
+
+        <Button
+
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape2"
+            android:text="Search"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:text="Order"
+            android:textColor="@color/white"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

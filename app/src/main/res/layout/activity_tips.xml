@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#E19498"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipsActivity">
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Skincare tips from the the specialist"
+        android:paddingTop="100dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+       >
+
+    </TextView>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:flipInterval="3000"
+        android:autoStart="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        >
+
+        <ImageView
+            android:id="@+id/tips1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tips1" />
+        <ImageView
+            android:id="@+id/tips2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tips2" />
+        <ImageView
+            android:id="@+id/tips3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tips3" />
+        <ImageView
+            android:id="@+id/tips4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tips4" />
+        <ImageView
+            android:id="@+id/tips5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tips5" />
+
+
+    </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

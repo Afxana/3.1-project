@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/insertProduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/new_bg"
+    tools:context=".InsertProductActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        android:text="@string/insert_product"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0B4B54"
+    />
+
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="product name"
+        android:hint="@string/product_name"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:padding="15dp"
+        android:layout_marginBottom="16dp"
+    />
+
+
+    <EditText
+        android:id="@+id/et_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="product price"
+        android:hint="@string/product_price"
+        android:background="@drawable/edit_text_background"
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/et_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="product quantity"
+        android:hint="@string/product_quantity"
+        android:inputType="number"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_selected_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/insert_your_product"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icon_upload2" />
+
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_image"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFF"
+        />
+
+    <Button
+        android:id="@+id/btn_insert_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_product"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonshape2"
+        android:textColor="#FFF"
+        />
+
+
+
+</LinearLayout>
